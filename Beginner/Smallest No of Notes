@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+class FLOW005 {
+    public static void main(String args[] ) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+       int money[]=new int[]{100,50,10,5,2,1};
+        
+        while(n-- >=1)
+        {
+          int m=sc.nextInt();
+          int c=0;
+          int chck=0;
+          while(m>0 && chck<money.length)
+          {
+              c=c+(m/money[chck]);
+              m=m%money[chck];
+              chck++;
+          
+            
+        }
+        System.out.println(c);
+       }
+    }
+}
+
