@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+class FSQRT{
+    public static void main(String args[] ) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+       
+        while(n-- >=1)
+        {
+           int no=sc.nextInt();
+           double ans=(Math.sqrt(no));
+           String a=String.format("%.0f",ans);
+           System.out.println(a);
+           
+            
+        }
+    }
+}
+
