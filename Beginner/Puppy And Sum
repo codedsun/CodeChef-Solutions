@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+class PPSUM{
+     public static int sum(int n)
+     {
+         int s=0;
+         for(int i=1;i<=n;i++)
+         {s=s+i;}
+         return s;
+      }
+        
+         
+    public static void main(String args[] ) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+       
+        while(n-- >=1)
+        {
+           int d=sc.nextInt();
+           int no=sc.nextInt();int c=no;int s=0;
+           for(int i=1;i<=d;i++)
+           {
+               s=sum(c);
+               c=s;
+               
+            }
+         System.out.println(s);
+        }
+    }
+}
+
+
