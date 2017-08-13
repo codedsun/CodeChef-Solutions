@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+class FLOW008{
+     
+    public static void main(String args[] ) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+       
+        while(n-- >=1)
+        {
+           int a=sc.nextInt();
+           if(a<10)
+           {
+               System.out.println("What an obedient servant you are!");
+               
+            }
+            else
+            {
+                System.out.println("-1");
+            }
+          
+               
+               
+           
+         
+        }
+    }
+}
+
+
