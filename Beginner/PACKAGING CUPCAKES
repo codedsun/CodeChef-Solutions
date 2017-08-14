@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+class MUFFINS3
+{
+      public static void main(String args[])
+      {
+           Scanner sc=new Scanner(System.in);
+           int t=sc.nextInt();
+           while(t-- >=1)
+           {
+              
+              System.out.println((sc.nextInt()/2)+1);
+           
+       }
+  }
+}
+    
+    
+          
+                
