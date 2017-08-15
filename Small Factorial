@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+class FLOW018
+{
+    public static long fact(int n)
+    {
+         if(n==0)return 1;
+         else
+         return (n*fact(n-1));
+        }
+      public static void main(String args[])
+      {
+           Scanner sc=new Scanner(System.in);
+           int t=sc.nextInt();
+           while(t-- >=1)
+           {
+              
+              System.out.println(fact(sc.nextInt()));
+              
+       }
+  }
+}
+    
+    
+          
+                
