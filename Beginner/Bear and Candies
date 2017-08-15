@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+class Candy123
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+           int a=sc.nextInt();
+           int b=sc.nextInt();
+           int i=1;
+           while(a>=0 && b>=0)
+           
+           {
+              if((i%2)==0 )
+              {
+                     b=b-i;
+                
+                    i++;
+                }
+                else
+                { 
+                    
+                   a=a-i;
+                  
+                  i++;
+                }
+                    
+                }
+               
+            if(a>b)
+            {
+                System.out.println("Limak");
+            }
+            else
+            {
+                System.out.println("Bob");
+            }
+                
+                
+            }
+              
+         }
+        }
+     
+            
