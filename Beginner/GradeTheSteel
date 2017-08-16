@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+class FLOW014
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+           int hard=sc.nextInt();
+           float cc=sc.nextFloat();
+           int ten=sc.nextInt();int grade=5;
+           if(hard>50 && cc<0.7 && ten>5600)
+           {
+              grade=10;
+            }
+           else if(hard>50 && cc<0.7)
+           {
+               grade=9;
+            }
+            else if(cc<0.7 && ten>5600)
+            {
+                grade=8;
+            }
+           else if(hard>50 && ten>5600)
+            {
+                 grade=7;
+            }
+            else if(hard>50 || cc<0.7 || ten>5600)
+               {
+                   grade=6;
+                }
+                else grade=5;
+                System.out.println(grade);
+            
+        }
+    }
+}
+    
+     
+            
