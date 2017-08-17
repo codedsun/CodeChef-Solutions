@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+
+class FLOW010
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+           String s=sc.next();
+           char z=s.charAt(0);
+           if(z=='B'||z=='b')
+           {
+               System.out.println("BattleShip");
+            }
+            if(z=='C'||z=='c')
+            {
+                System.out.println("Cruiser");
+            }
+            if(z=='D'||z=='d')
+            {
+                System.out.println("Destroyer");
+            }
+            if(z=='F'||z=='f')
+            {
+                System.out.println("Frigate");
+            }
+          
+           
+            
+            
+           
+          
+        }
+    }
+}
+    
+     
+            
