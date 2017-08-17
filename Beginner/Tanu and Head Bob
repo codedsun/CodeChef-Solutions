@@ -1,0 +1,50 @@
+import java.io.*;
+import java.util.*;
+
+class HEADBOB
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+           int n=sc.nextInt();
+           String s=sc.next();
+           int c=0;String r="";
+           for(int i=0;i<s.length();i++)
+           {
+                if(s.charAt(i)!='N')
+                {
+                    if(s.charAt(i)=='Y')
+                    {
+                        r="NOT INDIAN";
+                    }
+                    else if(s.charAt(i)=='I')
+                    {
+                        r="INDIAN";
+                    }
+                    c=1;
+                    break;
+                }
+                
+            }
+            if(c==0)
+            {
+               r="NOT SURE";
+               
+            }
+            System.out.println(r);
+                    
+                   
+           
+            
+            
+           
+          
+        }
+    }
+}
+    
+     
+            
