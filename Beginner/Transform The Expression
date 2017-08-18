@@ -1,0 +1,40 @@
+import java.io.*;
+import java.util.*;
+
+class ONP
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+           String s=sc.next();
+           Stack stack=new Stack();String res="";
+           for(int i=0;i<s.length();i++)
+           {
+               char z=s.charAt(i);
+               if(z>='a' && z<='z')
+               {
+                  res=res+z;
+                }
+                else if(z=='(')
+                {
+                    
+                }
+                else if (z== ')')
+                {
+                    res=res+stack.pop();
+                }
+                else
+                stack.push(z);
+            }
+               
+            System.out.println(res);
+            
+        }
+    }
+}
+    
+     
+            
