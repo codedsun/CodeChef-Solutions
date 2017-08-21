@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+class TWONMS
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+         
+           long a=sc.nextLong();
+           long b=sc.nextLong();
+            long n=sc.nextInt();
+          if(n%2==0)
+          {
+             
+            
+           
+          System.out.println((Math.max(a,b)/Math.min(a,b)));
+        }
+        else
+        {
+             System.out.println((Math.max((2*a),b)/Math.min((2*a),b)));
+             
+            }  
+             
+             
+         }
+    }
+}
+    
+     
+            
