@@ -1,0 +1,46 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+class LCH15JAB
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+          
+           String s=sc.next();ArrayList<Integer>  ar=new ArrayList();int c=0;String z;
+           while(s.length()!=0)
+           {
+             z=s.charAt(0)+"";  
+            c=(s.length()-((s.replace(z,"")).length()));
+             
+            s=s.replace(z,"");
+           ar.add(c);
+           Collections.sort(ar,Collections.reverseOrder());
+        }
+        int max=ar.get(0);c=0;
+        for(int i=1;i<ar.size();i++)
+        {
+             c=c+ar.get(i);
+             
+        }
+        if(max==c)
+        {
+            System.out.println("YES");
+        }
+        else
+        {
+            System.out.println("NO");
+        }
+       
+        
+          
+    }
+}
+}
+    
+     
+            
