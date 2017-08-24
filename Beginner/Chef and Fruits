@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+class FRUITS
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+          
+            int n=sc.nextInt();
+            int m=sc.nextInt();
+            int k=sc.nextInt();
+            int d=Math.abs(n-m);
+            if(d>k)
+            {
+                System.out.println(d-k);
+            }
+            else
+            {
+                System.out.println("0");
+            }
+        }
+}
+}
+    
+     
+            
