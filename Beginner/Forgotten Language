@@ -1,0 +1,64 @@
+import java.io.*;
+import java.util.*;
+import java.math.*;
+
+class FRGTNLNG
+{
+    public static void main(String args[])
+    {
+         Scanner sc=new Scanner(System.in);
+         int t=sc.nextInt();
+         while(t-- >=1)
+         {
+                int n=sc.nextInt();
+                int k=sc.nextInt();
+                int i;
+                ArrayList<String> total=new ArrayList();
+                
+                String dict[]=new String[n];
+                for( i=0;i<n;i++)
+                {
+                    dict[i]=sc.next();
+                }
+                for(i=1;i<=k;i++)
+                {
+                    int l=sc.nextInt();
+                    String s[]=new String [l];
+                    for(int j=0;j<l;j++)
+                    {
+                        s[j]=sc.next();
+                        total.add(s[j]);
+                    }
+                    
+                    
+                }
+                String res="";
+                for(i=0;i<n;i++)
+                {
+                    if(total.contains(dict[i]))
+                    {
+                        res=res+"YES ";
+                        
+                    }
+                    else
+                    
+                    { 
+                        res=res+"NO ";
+                        
+                    }
+                    
+                    
+                   
+                    
+                }System.out.println(res.trim());
+             
+         }
+        
+        
+    }
+}
+
+
+    
+     
+            
