@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+class CHN09
+{
+      
+               
+      public static void main(String args[])
+      {
+           Scanner sc=new Scanner(System.in);
+           int t=sc.nextInt();
+           while(t-- >=1)
+           {
+            
+               String s=sc.next();
+               int a= (s.length()-((s.replace("a","")).length()));
+               int b=(s.length()-((s.replace("b","")).length()));
+               int l=s.length();
+               System.out.println(Math.min(l-a,l-b));
+            
+            }
+      
+        
+      }
+}
+    
