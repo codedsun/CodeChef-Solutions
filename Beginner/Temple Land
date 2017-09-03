@@ -1,0 +1,84 @@
+import java.io.*;
+import java.util.*;
+class TEMPLELA
+{
+      public static void main(String args[])
+      {
+           Scanner sc=new Scanner(System.in);
+           int t=sc.nextInt();
+           while(t-- >=1)
+           {
+               int n=sc.nextInt();
+               int h[]=new int[n];
+               for(int i=0;i<n;i++)
+               {
+                   h[i]=sc.nextInt();
+                   
+                }
+               if(n%2!=0)
+               {
+                   int c=n/2;int flag=0;
+                   if(h[0]==1)
+                   {
+                      
+                       for(int i=0;i<c;i++)
+                       {
+                           if((h[i]==h[n-1-i])&&((h[i]==h[i+1]-1))&&(h[n-1-i]==h[n-2-i]-1))
+                           {
+                              flag=0;
+                            }
+                            else
+                            {
+                               flag=1;
+                               break;
+                            }
+                        }
+                        if(flag==1)
+                        {
+                            System.out.println("no");
+                        }
+                        else
+                        {
+                            System.out.println("yes");
+                        }
+                          
+                    }
+                    else
+                    {
+                        System.out.println("no");
+                    }
+                    
+                        
+                   
+                   
+                   
+                }
+                else
+                {
+                    System.out.println("no");
+                    
+                }
+              
+             
+               
+               
+               
+               
+               
+               
+               
+               
+               
+            }
+      
+        
+        
+        
+        
+        
+      
+        
+        
+      }
+}
+    
